@@ -1,0 +1,23 @@
+Sitedeki ip çekme php den yapýlýyo o yüzden bilmyorum dalgýnlýðýma o þekilde yapmýþým eðer kullanýcýnýn network ip sini almak istyosan alttak kodu kullan gerekeni yap:
+///////////////////////////////////////////////////////////
+$.ajax({                                                  /
+            url: 'https://api.ipify.org?format=json',     /
+            method: 'GET',                                /
+            success: function(response) {                 /
+                var ip = response.ip;                     /
+                ipcalistir(ip);                           /
+            }                                             /
+        });                                               /
+	                                                  /
+        function ipcalistir(ip) {                         /
+            $.ajax({                                      /
+                url: 'kendiurlen',                        /
+                method: 'POST',                           /
+                data: { "ip": ip },                       /
+                success: function(result) {               /
+                                                          /
+                }                                         /
+            });                                           /
+        }                                                 /
+///////////////////////////////////////////////////////////
+veriyi istediðin yere gnder sonra post et iþ bitti.(Jquery)

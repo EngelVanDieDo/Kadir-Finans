@@ -1,0 +1,260 @@
+*{
+	padding:0;
+	margin:0;
+}
+body {
+    background:#16161A;
+}
+
+form {
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding:80px;
+    background-color: #f0f0f0;
+    background: url("http://res.cloudinary.com/dcwodeda4/image/upload/v1502999946/DayOneBg_zhnovh.png") no-repeat;
+    background-size: cover;	
+    
+}
+
+form label {
+    margin-bottom: 10px;
+   
+}
+
+form input[type="text"],
+form input[type="email"],
+form input[type="password"] {
+    /*padding: 10px 30px 10px 10px;*/
+    margin-bottom: 10px;
+    border-radius: 5px;
+    border: none;
+    box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.2);
+    width: 100%;
+    max-width: 300px;
+}
+
+form button[type="submit"] {
+    text-align: center;
+    padding: 10px 55px 10px 55px;
+    margin-top:10px;
+    margin-left:10px;
+    background-color: #3A3AEE;
+    color: #fff;
+    border: none;
+    border-radius: 15px;
+    box-shadow: 0px 3.5px 4px rgba(0, 0, 0, 0.3);
+    cursor: pointer;
+    border:2px solid transparent;
+	font-size:16px;
+
+}
+.buton{
+    text-align: center;
+    padding: 10px 55px 10px 55px;
+    margin-top:10px;
+    margin-left:10px;
+    background-color: #3A3AEE;
+    color: #fff;
+    border: none;
+    border-radius: 15px;
+    box-shadow: 0px 3.5px 4px rgba(0, 0, 0, 0.3);
+    cursor: pointer;
+    border:2px solid transparent;	
+	
+}
+.buton:hover{
+	border:2px solid #4082f5;
+}
+form button[type="submit"]:hover{
+border:2px solid #4082f5;
+}
+
+@media only screen and (max-width: 768px) {
+ 
+   
+}
+/*Kadir fantazi alanı*/
+.login-box {
+position: absolute;
+top: 50%;
+left: 50%;
+max-width: 500px;
+padding: 40px;
+transform: translate(-50%, -50%);
+
+}
+
+.login-box h2 {
+margin: 0 0 -30px;
+padding: 0;
+color: #fff;
+text-align: center;
+}
+
+.login-box .user-box {
+position: relative;
+width:150%;
+padding-right:10px;
+}
+
+.login-box .user-box input {
+width: 100%;
+padding: 10px 0 10px 10px;
+margin-bottom: 30px;
+border: none;
+
+
+background:rgba(256,256,256,0.1);
+border: 3px solid transparent; border-radius: 18px;
+outline: none;
+color: #fff;
+}
+.login-box .user-box label {
+position: absolute;
+top:0;
+left: 9px;
+padding: 10px 0;
+color: RGB(148, 148, 148);
+pointer-events: none;
+transition: 0.5s all;
+}
+
+.login-box .user-box input:focus ~ label,
+.login-box .user-box input:valid ~ label {
+top: -25px;
+left: 8px;
+color: #fff;
+font-size: 12px;
+}
+.login-box .user-box input:focus , 
+.login-box .user-box input:valid {
+border: 3px white solid;
+}
+.border{
+--color: #8A9B0F; /* the border color */
+--border: 10px;   /* the border thickness*/
+--offset: 20px;   /* control the offset*/
+--gap: 5px;       /* the gap on hover */
+
+--_c: var(--color) var(--border), #0000 0 calc(100% - var(--border)),var(--color) 0;
+--_o: calc(3*var(--offset));
+padding: 
+calc(var(--gap) + var(--border))
+calc(var(--gap) + var(--border) + var(--offset))
+calc(var(--gap) + var(--border) + var(--offset))
+calc(var(--gap) + var(--border));
+background: 
+linear-gradient(      var(--_c)) var(--_o) var(--_o), 
+linear-gradient(90deg,var(--_c)) var(--_o) var(--_o);
+background-size: calc(100% - var(--_o)) calc(100% - var(--_o));
+background-repeat: no-repeat;
+filter: grayscale(.4);
+transition: .5s;
+cursor: pointer;}	
+.border:hover {
+background-position: 0px 0px;
+background-size: calc(100% - var(--offset)) calc(100% - var(--offset));
+filter: grayscale(0);
+}
+/*-------------------------------Border 2---------------------------------*/
+:root {
+--d: 2500ms;
+--angle: 90deg;
+--gradX: 100%;
+--gradY: 50%;
+--c1: rgba(168, 239, 255, 1);
+--c2: rgba(168, 239, 255, 0.1);
+}
+
+
+
+.box {
+
+margin: max(1rem, 3vw);
+border: 0.35rem solid;
+
+padding-top:0px;
+border-image: radial-gradient(ellipse at var(--gradX) var(--gradY), var(--c1), var(--c1) 10%, var(--c2) 40%) 30;
+animation: borderRadial var(--d) linear infinite forwards;
+}
+
+
+
+@keyframes borderRotate {
+100% {
+--angle: 420deg;
+}
+}
+
+@keyframes borderRadial {
+20% {
+--gradX: 100%;
+--gradY: 50%;
+}
+40% {
+--gradX: 100%;
+--gradY: 100%;
+}
+60% {
+--gradX: 50%;
+--gradY: 100%;
+}
+80% {
+--gradX: 0%;
+--gradY: 50%;
+}
+
+90% {
+--gradX: 50%;
+--gradY: 0%;
+}
+100%{
+--gradX: 50%;
+--gradY: 100%;
+}
+}
+@property --angle {
+syntax: '<angle>';
+initial-value: 90deg;
+inherits: true;
+}
+
+@property --gradX {
+syntax: '<percentage>';
+initial-value: 50%;
+inherits: true;
+}
+
+@property --gradY {
+syntax: '<percentage>';
+initial-value: 0%;
+inherits: true;
+}
+/*loading*/
+
+.load-conteiner{
+    position: relative;
+    /* top: 50%; */
+    left: 50%;
+    max-width: 231px;
+    height: 563px;
+    padding: 40px;
+    transform: translate(-50%, 0%);
+    background: red;
+    z-index: 99999;
+	
+}
+/*loading*/
+
+@media only screen and (max-width: 385px) {
+ .box{
+	 margin:0;
+ }
+ .login-box{
+	 padding:0;
+ }
+   
+}
+

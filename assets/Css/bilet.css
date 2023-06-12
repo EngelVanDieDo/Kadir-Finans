@@ -1,0 +1,261 @@
+*{
+	text-decoration:none;
+	list-style:none;
+	padding:0;
+	margin:0;
+}
+/*Bilet*/
+.conteiner{
+	width:100%;
+	height:100%;
+	background:#16161a;
+	display:flex;
+	justify-content: center;
+    align-items: center;
+	flex-direction:column;
+}
+#yomss{
+	position: fixed;
+    z-index: 9999999999;
+    top: 0;
+    width: 100%;
+	height:38px;
+}
+.buton{
+	width: 10%;
+    background: #29293e;
+    border: 1px solid;
+    border-radius: 5px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+	margin:5px 0 0 0;
+	cursor:pointer
+}
+h3{
+color:#707070;	
+}
+.buton:hover{
+	background:#373755;
+}
+.input{
+	    background: #16161a;
+    border: 1px solid #494949;
+    border-radius: 15px;
+    padding: 0 0 0 5px;
+    color: #a3a2a2;
+}
+}
+/*Bilet*/
+/*Kurs*/
+#bodyy{
+	min-height:1024px;
+}
+h2{
+	    font-size: 20px;
+}
+.conteiner-kurs{
+	width:100%;
+	height:100%;
+	background:#16161a;
+	display:flex;
+    align-items:center;
+}
+.kurs-video{
+
+	flex:1.3;
+		height:95%;
+	margin:15px;
+}
+.kurs-seçim{
+	background:#1d1d21;
+	flex:0.7;
+
+	border:1px #808080 solid;
+	    border-radius: 5px
+}
+
+.kurslar1{
+	width:100%;
+	height:20%;
+	position:relative;
+    display:flex;
+		padding:2px 0 0 0;
+		cursor:default;
+}
+.kurs-content-resim{
+    width: 100px;
+    height: 56px;
+    margin:5px;
+	
+}
+.kurs-content-resim img{
+	    width: 100%;
+    height: 100%;
+	    border: 1px solid gray;
+    border-radius: 5px;
+}
+.kurs-content-başlık{
+	width:65%;
+	height:100%;
+	display:flex;
+	flex-direction:column;
+	padding:5px 0 0 0;
+	    word-break:break-word;
+}
+.kurs-content-başlıkk{
+		width:65%;
+	height:97%;
+	display:flex;
+	flex-direction:column;
+    word-break:break-word;
+}
+
+.kurslar2{
+	width:100%;
+	height:20%;
+	position:relative;
+display:flex;
+		padding:2px 0 0 0;
+		cursor:default;	
+}
+
+.kurslar3{
+	width:100%;
+	height:20%;
+	position:relative;
+display:flex;
+		padding:2px 0 0 0;
+		cursor:default;	
+}
+
+.kurslar4{
+	width:100%;
+	height:20%;
+	position:relative;
+display:flex;
+		padding:2px 0 0 0;
+		cursor:default;	
+}
+
+.kurslar5{
+	width:100%;
+	height:20%;
+display:flex;
+		padding:2px 0 0 0;
+		cursor:default;	
+
+}
+
+.kurslar1:hover{
+	background:#2f2f35;
+}
+.kurslar2:hover{
+	background:#2f2f35;
+}
+.kurslar3:hover{
+	background:#2f2f35;
+}
+.kurslar4:hover{
+	background:#2f2f35;
+}
+.kurslar5:hover{
+	background:#2f2f35;
+}
+.video-gösterim{
+	width:100%;
+	height:100%;
+	display:flex;
+	justify-content:center;
+	align-items:center;
+	flex-direction:column;
+	text-align:center;
+	background:#242437;
+	border-radius: 15px;
+}
+.video-gösterim p{
+	font-size:24px;
+    color: #b7b4b4;
+}
+.anasayfa-dön{
+	position:fixed;
+	z-index:9999999999999999;
+	top:92%;
+	left:94.5%;
+	background: #16161a;
+    color: #fff;
+	border-radius:50%;
+	border:1px solid #fff;
+	width:50px;
+	height:50px;
+	display:flex;
+	align-items:center;
+}
+.anasayfa-dön:hover{
+	background:#2f2f35;
+}
+.anasayfa-dön p{
+	padding:0 10px;
+	    text-align: center;
+}
+.kurs-content-başlık span{
+	color: gray;
+}
+.kurs-content-başlıkk span{
+	color: gray;
+}
+.kurs-content-başlık h2{
+	color: white;
+}
+.kurs-content-başlıkk h2{
+	color: white;
+}
+.kurs-content-başlık p{
+	color: #7676b9;
+}
+.kurs-content-başlıkk p{
+	color: #7676b9;
+}
+@media screen and (max-width: 800px){
+	.conteiner-kurs{
+flex-direction:column;
+}
+.kurs-video{
+	width:98%;
+	margin:5px;
+}
+.kurslar1{
+	height:auto;
+}
+.kurslar2{
+	height:auto;
+}
+.kurslar3{
+	height:auto;
+}
+.kurslar4{
+	height:auto;
+}
+.kurslar5{
+	height:auto;
+}
+.anasayfa-dön{
+
+	top:92%;
+	left:90%;
+
+}
+}
+@media screen and (max-width: 525px){
+	.anasayfa-dön{
+
+	top:92%;
+	left:85%;
+
+}
+.buton{
+	font-size: 12px;
+}
+} 
+/*Kurs*/
